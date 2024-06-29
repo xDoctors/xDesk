@@ -1754,7 +1754,7 @@ class _AboutState extends State<_About> {
           child: SingleChildScrollView(
             controller: scrollController,
             physics: DraggableNeverScrollableScrollPhysics(),
-            child: _Card(title: '${translate('About')} RustDesk', children: [
+            child: _Card(title: '${translate('About')} xDesk', children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -1772,47 +1772,12 @@ class _AboutState extends State<_About> {
                           .marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com/privacy.html');
-                      },
-                      child: Text(
-                        translate('Privacy Statement'),
-                        style: linkStyle,
-                      ).marginSymmetric(vertical: 4.0)),
-                  InkWell(
-                      onTap: () {
-                        launchUrlString('https://rustdesk.com');
+                        launchUrlString('http://xintechs.com');
                       },
                       child: Text(
                         translate('Website'),
                         style: linkStyle,
-                      ).marginSymmetric(vertical: 4.0)),
-                  Container(
-                    decoration: const BoxDecoration(color: Color(0xFF2c8cff)),
-                    padding:
-                        const EdgeInsets.symmetric(vertical: 24, horizontal: 8),
-                    child: SelectionArea(
-                        child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Copyright © ${DateTime.now().toString().substring(0, 4)} Purslane Ltd.\n$license',
-                                style: const TextStyle(color: Colors.white),
-                              ),
-                              Text(
-                                translate('Slogan_tip'),
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w800,
-                                    color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                    )),
-                  ).marginSymmetric(vertical: 4.0)
+                      ).marginSymmetric(vertical: 4.0))
                 ],
               ).marginOnly(left: _kContentHMargin)
             ]),
