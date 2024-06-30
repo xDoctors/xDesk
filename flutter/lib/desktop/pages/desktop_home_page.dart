@@ -86,6 +86,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
       buildTip(context),
       if (!isOutgoingOnly) buildIDBoard(context),
       if (!isOutgoingOnly) buildPasswordBoard(context),
+      /*
       FutureBuilder<Widget>(
         future: buildHelpCards(),
         builder: (_, data) {
@@ -103,6 +104,7 @@ class _DesktopHomePageState extends State<DesktopHomePage>
           }
         },
       ),
+      */
       buildPluginEntry(),
     ];
     if (isIncomingOnly) {
