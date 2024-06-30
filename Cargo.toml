@@ -1,11 +1,11 @@
 [package]
-name = "rustdesk"
+name = "xdesk"
 version = "1.2.7"
-authors = ["rustdesk <info@rustdesk.com>"]
+authors = ["xdesk <info@xintechs.com>"]
 edition = "2021"
 build= "build.rs"
-description = "RustDesk Remote Desktop"
-default-run = "rustdesk"
+description = "xDesk Remote Desktop"
+default-run = "xdesk"
 rust-version = "1.75"
 
 [lib]
