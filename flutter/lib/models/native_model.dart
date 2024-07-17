@@ -116,7 +116,7 @@ class PlatformFFI {
         : isLinux
             ? DynamicLibrary.open('librustdesk.so')
             : isWindows
-                ? DynamicLibrary.open('libxdesk.dll')
+                ? DynamicLibrary.open('librustdesk.dll')
                 : isMacOS
                     ? DynamicLibrary.open("liblibrustdesk.dylib")
                     : DynamicLibrary.process();
